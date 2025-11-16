@@ -21,30 +21,30 @@ export default function Home() {
   ];
 
   const skills = [
-    { name: "AWS", icon: "☁️" },
+    // { name: "AWS", icon: "☁️" },
     { name: "Bootstrap", icon: "🎨" },
     { name: "C", icon: "⚙️" },
     { name: "C++", icon: "💻" },
     { name: "Django", icon: "🐍" },
-    { name: "Docker", icon: "🐳" },
+    // { name: "Docker", icon: "🐳" },
     { name: "Git", icon: "📚" },
-    { name: "Heroku", icon: "🚀" },
+    // { name: "Heroku", icon: "🚀" },
     { name: "HTML5", icon: "🌐" },
-    { name: "Illustrator", icon: "✏️" },
+    // { name: "Illustrator", icon: "✏️" },
     { name: "JavaScript", icon: "📜" },
     { name: "Linux", icon: "🐧" },
-    { name: "MSSQL", icon: "🗄️" },
+    // { name: "MSSQL", icon: "🗄️" },
     { name: "MySQL", icon: "💾" },
-    { name: "Node.js", icon: "🟢" },
-    { name: "Photoshop", icon: "🎭" },
-    { name: "PostgreSQL", icon: "🐘" },
-    { name: "Postman", icon: "📬" },
+    // { name: "Node.js", icon: "🟢" },
+    // { name: "Photoshop", icon: "🎭" },
+    // { name: "PostgreSQL", icon: "🐘" },
+    // { name: "Postman", icon: "📬" },
     { name: "Python", icon: "🐍" },
-    { name: "Redis", icon: "🔴" },
+    // { name: "Redis", icon: "🔴" },
     { name: "SQLite", icon: "💿" },
     { name: "Tailwind", icon: "💨" },
     { name: "TypeScript", icon: "🔷" },
-    { name: "Vue.js", icon: "🟢" },
+    // { name: "Vue.js", icon: "🟢" },
   ];
 
   const socialLinks = [
@@ -99,7 +99,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-cyan-400 text-center mb-8">نبذة عني</h2>
           <div className="space-y-4 text-lg text-gray-300 leading-relaxed">
             <p>
-              أنا <span className="font-semibold text-cyan-400">مطور ويب متكامل</span> شغوف بإنشاء مواقع 
+              <span className="font-semibold text-cyan-400">مطور ويب </span> شغوف بإنشاء مواقع 
               <span className="text-cyan-400 font-medium"> سريعة </span> 
               و<span className="text-cyan-400 font-medium"> سهلة الاستخدام</span>.
               أعمل باستخدام أحدث التقنيات في مجالات مختلفة تشمل:
@@ -110,30 +110,30 @@ export default function Home() {
                 <div className="flex items-center space-x-2 space-x-reverse">
                   <span className="text-cyan-400 text-xl">🔹</span>
                   <span className="font-semibold text-cyan-400">Frontend:</span>
-                  <span>Next.js, TailwindCSS, Vue.js, TypeScript</span>
+                  <span>Next.js, TailwindCSS, {/*Vue.js,*/} TypeScript</span>
                 </div>
                 <div className="flex items-center space-x-2 space-x-reverse">
                   <span className="text-cyan-400 text-xl">🔹</span>
                   <span className="font-semibold text-cyan-400">Backend:</span>
-                  <span>Django, Node.js, Python</span>
+                  <span>Django, {/*Node.js,*/} Python</span>
                 </div>
                 <div className="flex items-center space-x-2 space-x-reverse">
                   <span className="text-cyan-400 text-xl">🔹</span>
                   <span className="font-semibold text-cyan-400">Databases:</span>
-                  <span>MySQL, PostgreSQL, MSSQL, SQLite, Redis</span>
+                  <span>MySQL, {/*PostgreSQL,*/} {/*MSSQL,*/} SQLite, {/*Redis*/}</span>
                 </div>
               </div>
               
               <div className="space-y-3">
-                <div className="flex items-center space-x-2 space-x-reverse">
+                {/* <div className="flex items-center space-x-2 space-x-reverse">
                   <span className="text-cyan-400 text-xl">🔹</span>
                   <span className="font-semibold text-cyan-400">DevOps:</span>
                   <span>Docker, AWS, Heroku, Linux</span>
-                </div>
+                </div> */}
                 <div className="flex items-center space-x-2 space-x-reverse">
                   <span className="text-cyan-400 text-xl">🔹</span>
                   <span className="font-semibold text-cyan-400">Tools:</span>
-                  <span>Git, Postman, Photoshop, Illustrator</span>
+                  <span>Git & Github {/*, Postman, Photoshop, Illustrator*/}</span>
                 </div>
                 <div className="flex items-center space-x-2 space-x-reverse">
                   <span className="text-cyan-400 text-xl">🔹</span>
@@ -144,7 +144,7 @@ export default function Home() {
             </div>
 
             <p className="mt-6 p-4 bg-gray-700 rounded-lg border-r-4 border-cyan-400">
-              هدفي هو إنشاء تجارب ويب مميزة تدمج بين الأداء العالي والتصميم الجذاب، 
+              هدفي هو إنشاء مواقع ويب مميزة تدمج بين الأداء العالي والتصميم الجذاب، 
               مع التركيز على تقديم حلول فعّالة وسلسة للمستخدم.
             </p>
           </div>
@@ -194,7 +194,7 @@ export default function Home() {
         <div className="bg-gradient-to-r from-gray-800 to-gray-700 text-white rounded-2xl p-8 text-center border border-gray-600">
           <h2 className="text-3xl font-bold mb-4 text-cyan-400">تواصل معي</h2>
           <p className="text-lg mb-6 text-gray-300">
-            هل ترغب في التعاون معي أو لديك مشروع ترغب بمناقشته؟
+            هل ترغب في التعامل معي أو لديك مشروع ترغب بمناقشته؟
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
