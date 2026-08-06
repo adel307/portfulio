@@ -95,6 +95,22 @@ margin-bottom: 26px;
 }
 .badge .dot{ width:7px; height:7px; border-radius:50%; background: var(--violet); }
 
+.highlight-text {
+    background: var(--violet-soft);
+    color: var(--violet);
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.hero-intro {
+    background: var(--violet-soft);
+    color: var(--violet);
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.6rem;
+}
+
 h1.headline{
 font-family: var(--display); font-weight: 800;
 font-size: clamp(2.4rem, 5.2vw, 4rem);
