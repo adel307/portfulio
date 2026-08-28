@@ -1,142 +1,93 @@
-# Adel Al-Boshy
+<div align="center">
+  <a href="https://adel307.github.io/portfulio/">
+    <img src="./Media/portfolio-preview.png" alt="Adel Al-Boshy's portfolio homepage" width="100%" />
+  </a>
 
-I am Adel Al-Boshy, a Full-Stack Developer and Computer Science & Artificial Intelligence student at Helwan University, Cairo. I build web products from the database to the user interface, with a strong focus on practical, production-ready software that solves real business problems.
+  <h1>👋 مرحبًا، أنا عادل أحمد البوشي</h1>
+  <h3>Full-Stack Software Engineer | CS Student at Helwan University</h3>
 
-## Who I Am
+  <p>طالب بالسنة الرابعة بكلية الحاسبات والذكاء الاصطناعي - جامعة حلوان. مهندس برمجيات متكامل (Full-Stack Developer) يجمع بين البناء الفني الصلب للتطبيقات ومهارات حل المشكلات والتفكير التحليلي.</p>
 
-I am not just a coder who writes lines of code — I am a developer who designs, builds, and delivers complete digital solutions. My work blends technical depth with business thinking, so I can turn ideas into usable platforms, dashboards, and company websites that are both functional and polished.
+  <p>
+    <a href="https://www.linkedin.com/in/adel-ahmed-20b956379" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+    <a href="mailto:adel.307.ahmed@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+    <a href="https://adel307.github.io/portfulio/" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Live%20Demo-0B132B?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Demo" /></a>
+  </p>
 
-I enjoy working end-to-end on projects, from planning and architecture to implementation and deployment. I have built solutions for freelancers, companies, and personal products, often with bilingual support in English and Arabic.
+  <p><a href="https://adel307.github.io/portfulio/"><strong>🌐 Live Demo</strong></a></p>
+</div>
 
-## What I Work On
+---
 
-I work on full-stack web applications and digital products that require a complete development cycle. My focus includes:
+## 🎓 الخلفية الأكاديمية (Academic Background)
 
-- Full-stack web applications
-- Admin dashboards and internal management tools
-- Corporate websites and company portfolios
-- Bilingual English/Arabic interfaces
-- Business tools for property management, payments, utilities, and operations
-- Database-driven systems with clean backend logic and user-friendly interfaces
+- 🏫 **الكلية:** الحاسبات والذكاء الاصطناعي - جامعة حلوان.
+- 🎓 **السنة الدراسية:** الفرقة الرابعة (سنة التخرج).
+- 📚 **التركيز الأكاديمي:** دراسة متعمقة لـ Data Structures, Algorithms, System Design، وSystem Architecture.
 
-## Services I Offer
+---
 
-### Full-Stack Web Development
-I design and build complete web systems, including:
+## 🧩 مهارات حل المشكلات والتصميم (Problem Solving & Engineering Skills)
 
-- Frontend development with React, Next.js, TypeScript, and modern UI frameworks
-- Backend APIs with Node.js, Express, Django, and FastAPI
-- Database design with PostgreSQL, MySQL, MongoDB, and SQLite
-- Deployment and project setup on platforms like Vercel and Render
+- 🧠 **Problem Solving & Algorithms:** امتلاك تفكير تحليلي قوي ونمذجة للمشكلات البرمجية، مع دراسة وتطبيق متقدم لخوارزميات البحث والفرز والتحسين (Advanced Algorithms & Data Structures).
+- 📐 **Professional System Architecture & Design:** القدرة على تخطيط وتصميم المشاريع البرمجية من الصفر بطريقة احترافية (Scalable Architecture) تشمل هيكلة قواعد البيانات وتصميم المكونات المستقلة.
+- 🔄 **Clean Code & Software Principles:** الالتزام بكتابة كود نظيف، قابل للصيانة وإعادة الاستخدام، مع مراعاة مبادئ SOLID وOOP.
 
-### Dashboard & Business Tool Development
-I build internal tools and dashboards to help businesses track and manage data efficiently, such as:
+---
 
-- Property dashboards
-- Tenant and contract management systems
-- Finance and payment-related systems
-- Data-heavy admin panels
+## 🤝 المهارات الشخصية وبيئة العمل (Soft Skills & Professional Competencies)
 
-### Corporate Website & Portfolio Development
-I create professional websites for companies and service providers that need:
+- 🗣 **التواصل الفعال (Effective Communication):** القدرة على شرح المفاهيم التقنية المعقدة وتبسيطها لفرق العمل وأصحاب العمل.
+- 👥 **العمل الجماعي (Teamwork & Collaboration):** خبرة في العمل ضمن فريق، مشاركة الأفكار، والتكامل باستخدام أدوات إدارة النسخ مثل Git وGitHub.
+- ⏱ **إدارة الوقت والمشاريع (Time Management & Ownership):** تنظيم مهام التطبيق، الالتزام بالمواعيد النهائية (Deadlines)، وتحمل المسؤولية الكاملة عن جودة المخرجات.
+- 💡 **التكيف والتعلم المستمر (Adaptability & Fast Learner):** القدرة على استيعاب التقنيات الجديدة ومواكبة متطلبات السوق بسرعة ودقة.
 
-- Modern, responsive design
-- Clear service presentation
-- Trust-building digital presence
-- Bilingual content support
+---
 
-## Skills
+## 🛠 المهارات التقنية (Technical Stack)
 
-### Frontend
-- React
-- Next.js
-- TypeScript
-- JavaScript
-- HTML5
-- CSS3
-- Tailwind CSS
-- Material UI
-- Vite
+### Frontend Development
 
-### Backend
-- Node.js
-- Express
-- Django
-- FastAPI
-- RESTful API design
-- Authentication and authorization
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-### Databases
-- PostgreSQL
-- MySQL
-- MongoDB
-- SQLite
+### Backend Development
 
-### Tools & Workflow
-- Git & GitHub
-- Docker
-- Postman
-- Swagger
-- Vercel
-- Render
-- VS Code
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
-## Technical Approach
+### Databases & Tools
 
-I believe software should be:
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-00758F?style=for-the-badge&logo=mysql&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-121011?style=for-the-badge&logo=github&logoColor=white)
 
-- Scalable
-- Maintainable
-- User-friendly
-- Efficient for real business needs
-- Easy to extend in the future
+---
 
-My process focuses on creating strong architecture, clean code, and practical product outcomes rather than just visual design alone.
+## 📌 أبرز المشاريع (Featured Projects)
 
-## Featured Project Types
+| اسم المشروع | التقنيات المستخدمة | الوصف والتصميم | الرابط |
+| :--- | :--- | :--- | :---: |
+| **AqarTech** | `Next.js` `Node.js` `MongoDB` | لوحة تحكم لإدارة العقارات تجمع بيانات العمليات في واجهة منظمة وسريعة الاستجابة. | [Live Demo](https://adel307.github.io/portfulio/) |
+| **Paylio Payment System** | `Django` `Python` `MySQL` | نظام دفع متكامل يوفّر إدارة آمنة للأموال ولوحة تحكم للمستخدمين وواجهة إدارية للعمليات. | [Code](https://github.com/Islam412/Payment-system) |
 
-This portfolio showcases projects in several categories:
+---
 
-- Dashboards
-- Corporate websites
-- Utilities and business tools
-- Full-stack product builds
+## 📊 إحصائيات GitHub (GitHub Stats)
 
-## Project Structure
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=adel307&show_icons=true&theme=radial&hide_border=true" alt="Adel's GitHub Stats" height="160" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=adel307&layout=compact&theme=radial&hide_border=true" alt="Top Languages" height="160" />
+</div>
 
-- `Main/index.html` — portfolio homepage
-- `Main/style.css` — page styling and responsive layout
-- `Main/script.js` — functionality for filters, translation, reveal effects, and form handling
-- `Media/` — project and profile images
-- `lib/Adel_AlBoshy_CV.pdf` — downloadable CV
+---
 
-## Local Preview
-
-To preview the project locally:
-
-```bash
-cd "Adel Portufolio"
-python3 -m http.server 8000
-```
-
-Then open:
-
-```text
-http://localhost:8000/Main/
-```
-
-## CV Download
-
-The CV is available in the portfolio and can be downloaded as:
-
-- `Adel_AlBoshy_CV.pdf`
-
-## Contact
-
-- Email: adel.307.ahmed@gmail.com
-- GitHub: https://github.com/adel307
-- LinkedIn: https://www.linkedin.com/in/adel-ahmed-20b956379
-
-## Summary
-
-I am a developer who enjoys building meaningful software, solving real problems, and creating digital experiences that help businesses and people work better. I combine technical skills, product thinking, and design awareness to deliver practical and modern web solutions.
+<div align="center">
+  <sub>تم التطوير بواسطة <b>عادل أحمد البوشي</b> • يسعدني دائماً التواصل معك!</sub>
+</div>
