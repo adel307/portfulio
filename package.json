@@ -1,0 +1,25 @@
+{
+  "name": "my-portufolio",
+  "version": "1.0.0",
+  "description": "<div align=\"center\">   <a href=\"https://adel307.github.io/portfulio/\">     <img src=\"./Media/portfolio-preview.png\" alt=\"Adel Al-Boshy's portfolio homepage\" width=\"100%\" />   </a>",
+  "main": "index.html",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adel307/portfulio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adel307/portfulio/issues"
+  },
+  "homepage": "https://github.com/adel307/portfulio#readme",
+  "dependencies": {
+    "devicon": "^2.17.0"
+  }
+}
