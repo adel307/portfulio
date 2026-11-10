@@ -5,7 +5,7 @@ Cairo, Egypt\
 +201115756122\
 adel.307.ahmed@gmail.com
 
-[LinkedIn](https://linkedin.com/in/adel-ahmed-20b956379) ·
+[LinkedIn](https://www.linkedin.com/in/adel-ahmed-alboshy) ·
 [GitHub](https://github.com/adel307) ·
 [Portfolio](https://adel307.github.io/portfulio)
 

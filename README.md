@@ -9,7 +9,7 @@
   <p>طالب بالسنة الرابعة بكلية الحاسبات والذكاء الاصطناعي - جامعة حلوان. مطور برمجيات متكامل (Full-Stack Developer) متخصص في بناء وتصميم حلول برمجية متكاملة وقابلة للتوسع؛ بدءًا من قواعد البيانات وحتى واجهات المستخدم، مع دعم تطبيقات الذكاء الاصطناعي وتعدد اللغات (العربية والإنجليزية).</p>
 
   <p>
-    <a href="https://www.linkedin.com/in/adel-ahmed-20b956379" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+    <a href="https://www.linkedin.com/in/adel-ahmed-alboshy" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
     <a href="https://github.com/adel307" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/GitHub-121011?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
     <a href="mailto:adel.307.ahmed@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
     <a href="https://adel307.github.io/portfulio/" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Live%20Demo-0B132B?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Demo" /></a>
@@ -75,7 +75,7 @@
 | :--- | :--- | :--- | :---: |
 | **REC Company System** | `Next.js` `Tailwind` `Express` `PostgreSQL` | نظام مركزي لإدارة شركات العقارات والمقاولات والأنشطة المالية والموردين، مدعوم بـ مساعد ذكاء اصطناعي يستوعب الأوامر النصية والصوتية باللغة العربية. | [Live Demo](https://properties-company-system-frontend-one.vercel.app/) |
 | **ZEYOTI** | `Next.js` `Tailwind` `Django` `FastAPI` | موقع شركة موزع سيارات ثنائي اللغة (EN/AR) مع دعم كامل لـ RTL ومركز تحميل للموارد. | [Live Demo](https://zeyoti.vercel.app/en) |
-| **Paylio Payment System** | `Django` `FastAPI` `HTML/CSS` `JS` | نظام دفع إلكتروني متكامل يتيح إدارة الأموال، المصادقة الآمنة، ولوحة تحكم إدارية. | [GitHub Code](https://github.com/Islam412/Payment-system) |
+| **Paylio Payment System** | `Django` `FastAPI` `HTML/CSS` `JS` | نظام دفع إلكتروني متكامل يتيح إدارة الأموال، المصادقة الآمنة، ولوحة تحكم إدارية. | [GitHub Code](https://github.com/adel307/paylo/) |
 | **Naharco International** | `HTML5` `CSS3` `JavaScript` | موقع شركة ثنائي اللغة يعرض الخدمات والمدونة وبيانات التواصل. | [Live Demo](https://adel307.github.io/naharco-alduwlya-company/) |
 
 ---
