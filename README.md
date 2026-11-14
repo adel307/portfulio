@@ -1,7 +1,22 @@
 <div align="center">
-  <a href="https://adel307.github.io/portfulio/">
-    <img src="./Media/portfolio-preview.png" alt="Adel Al-Boshy's portfolio homepage" width="100%" />
-  </a>
+  <div style="display: inline-block; cursor: pointer;">
+    <a href="https://adel307.github.io/portfulio/">
+      <img src="./Media/adel.jpeg" alt="Adel Al-Boshy's portfolio homepage" width="240px" style="
+        border-radius: 20px; 
+        object-fit: cover; 
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(255, 255, 255, 0.1) inset;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      " 
+      onmouseover="
+        this.style.transform='translateY(-8px)'; 
+        this.style.boxShadow='0 20px 40px rgba(0, 0, 0, 0.7), 0 2px 6px rgba(255, 255, 255, 0.2) inset';
+      " 
+      onmouseout="
+        this.style.transform='translateY(0)'; 
+        this.style.boxShadow='0 10px 30px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(255, 255, 255, 0.1) inset';
+      " />
+    </a>
+  </div>
 
   <h1>👋 مرحبًا، أنا عادل أحمد البوشي</h1>
   <h3>Full-Stack Developer | CS & AI Student at Helwan University</h3>
@@ -76,7 +91,7 @@
 | **REC Company System** | `Next.js` `Tailwind` `Express` `PostgreSQL` | نظام مركزي لإدارة شركات العقارات والمقاولات والأنشطة المالية والموردين، مدعوم بـ مساعد ذكاء اصطناعي يستوعب الأوامر النصية والصوتية باللغة العربية. | [Live Demo](https://properties-company-system-frontend-one.vercel.app/) |
 | **ZEYOTI** | `Next.js` `Tailwind` `Django` `FastAPI` | موقع شركة موزع سيارات ثنائي اللغة (EN/AR) مع دعم كامل لـ RTL ومركز تحميل للموارد. | [Live Demo](https://zeyoti.vercel.app/en) |
 | **Paylio Payment System** | `Django` `FastAPI` `HTML/CSS` `JS` | نظام دفع إلكتروني متكامل يتيح إدارة الأموال، المصادقة الآمنة، ولوحة تحكم إدارية. | [GitHub Code](https://github.com/adel307/paylo/) |
-| **Naharco International** | `HTML5` `CSS3` `JavaScript` | موقع شركة ثنائي اللغة يعرض الخدمات والمدونة وبيانات التواصل. | [Live Demo](https://adel307.github.io/naharco-alduwlya-company/) |
+| **Roadmap Academy** | `Next.js` `React` `TypeScript` `Zustand` | موقع شركة ثنائي اللغة يعرض الخدمات والمدونة وبيانات التواصل. | [Live Demo](https://roadmap-course-player-page.vercel.app/) |
 
 ---
 
@@ -90,5 +105,5 @@
 ---
 
 <div align="center">
-  <sub>تم التحديث والتطوير بواسطة <b>عادل أحمد البوشي</b> • يسعدني دائماً التواصل معك!</sub>
+  <sub>تم التحديث والتطوير بواسطة <b>عادل أحمد البوشي</b> - يسعدني دائماً التواصل معك!</sub>
 </div>
