@@ -6,8 +6,10 @@
     <title>Adel Al-Boshy — Full-Stack Developer</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.18.0/devicon.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="./assets/style.css">
   </head>
   <body>
@@ -15,7 +17,8 @@
   <header>
     <div class="wrap nav-inner">
       <div class="logo"><span class="mark">A</span>Adel Al-Boshy</div>
-      <nav aria-label="Main">
+
+      <nav aria-label="Main" class="desktop-nav">
         <ul>
           <li><a href="#about" data-en="About" data-ar="نبذة">About</a></li>
           <li><a href="#resume" data-en="Resume" data-ar="السيرة">Resume</a></li>
@@ -24,12 +27,69 @@
           <li><a href="#contact" data-en="Contact" data-ar="تواصل">Contact</a></li>
         </ul>
       </nav>
+
       <div class="nav-right">
         <button class="lang-toggle" id="langToggle">EN / عربي</button>
         <a href="#contact" class="pill pill-dark pill-dark-nav" data-en="Let's talk" data-ar="لنتحدث">Let's talk</a>
       </div>
+
+      <!-- زر القائمة — يظهر في الموبايل في نفس مكان زر اللغة -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
+
+  <!-- القائمة الجانبية -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu-overlay" data-close-menu></div>
+    <aside class="mobile-menu-panel" role="dialog" aria-modal="true" aria-label="Menu">
+      <div class="mobile-menu-head">
+        <div class="logo"><span class="mark">A</span>Adel Al-Boshy</div>
+        <button class="menu-close" data-close-menu aria-label="Close menu">✕</button>
+      </div>
+
+      <nav aria-label="Mobile" class="mobile-nav">
+        <ul>
+          <li>
+            <a href="#about">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+              <span data-en="About" data-ar="نبذة">About</span>
+            </a>
+          </li>
+          <li>
+            <a href="#resume">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              <span data-en="Resume" data-ar="السيرة">Resume</span>
+            </a>
+          </li>
+          <li>
+            <a href="#services">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+              <span data-en="Services" data-ar="الخدمات">Services</span>
+            </a>
+          </li>
+          <li>
+            <a href="#portfolio">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+              <span data-en="Portfolio" data-ar="الأعمال">Portfolio</span>
+            </a>
+          </li>
+          <li>
+            <a href="#contact">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span data-en="Contact" data-ar="تواصل">Contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="mobile-menu-foot">
+        <button class="lang-toggle" id="langToggleMobile">EN / عربي</button>
+        <a href="#contact" class="pill pill-dark" data-en="Let's talk" data-ar="لنتحدث">Let's talk</a>
+      </div>
+    </aside>
+  </div>
 
   <main>
     <section class="hero">
@@ -57,7 +117,7 @@
           </div>
           
           <h1 class="headline">
-            <span data-en="Hi, I'm Adel " data-ar="مرحبًا، أنا عادل — ">Hi, I'm Adel  </span>
+            <span data-en="Hi, I'm Adel " data-ar="مرحبًا، أنا عادل ">Hi, I'm Adel  </span>
             <span class="accent" style="color:var(--violet)" data-en="Full-Stack Developer" data-ar="مطور full-stack">Full-Stack Developer</span>
           </h1>
           
@@ -79,7 +139,7 @@
 
           <div class="hero-actions">
             <a href="#portfolio" class="pill pill-dark" data-en="View my work" data-ar="مشاهدة أعمالي">View my work</a>
-            <a href="https://drive.google.com/file/d/1uX_EcgB2Rn4fmKQNiQd1LfNFUVGZO_aB/view?usp=drive_link" class="pill pill-outline" download="https://drive.google.com/file/d/1uX_EcgB2Rn4fmKQNiQd1LfNFUVGZO_aB/view?usp=drive_link" target="_blank" data-en="My CV" data-ar="CV">My CV</a>
+            <a href="https://drive.google.com/file/d/1uX_EcgB2Rn4fmKQNiQd1LfNFUVGZO_aB/view?usp=drive_link" class="pill pill-outline" target="_blank" rel="noopener" data-en="My CV" data-ar="CV">My CV</a>
           </div>
 
           <div class="avail">
@@ -94,7 +154,7 @@
 
     <section class="stats">
       <div class="wrap stats-grid" data-reveal>
-        <div><div class="stat-num">5</div><div class="stat-label" data-en="Projects shipped" data-ar="مشاريع منجزة">Projects shipped</div></div>
+        <div><div class="stat-num">4</div><div class="stat-label" data-en="Projects shipped" data-ar="مشاريع منجزة">Projects shipped</div></div>
         <div><div class="stat-num">2</div><div class="stat-label" data-en="Languages supported (EN/AR)" data-ar="لغات مدعومة (EN/AR)">Languages supported (EN/AR)</div></div>
         <div><div class="stat-num">4th</div><div class="stat-label" data-en="Year, CS & AI" data-ar="سنة دراسية، الحاسب وذكاء اصطناعي">Year, CS & AI</div></div>
         <div><div class="stat-num">DB→UI</div><div class="stat-label" data-en="Full-stack ownership" data-ar="ملكية كاملة للمنتج">Full-stack ownership</div></div>
@@ -221,7 +281,7 @@
                   <span data-en="AI API Communication (OpenAI/Claude)" data-ar="التواصل مع الذكاء الاصطناعي عبر APIs">AI API Communication (OpenAI/Claude)</span>
                 </li>
                 <li>
-                  <i class="devicon-network-plain colored"></i> 
+                  <i class="fa-solid fa-diagram-project"></i> 
                   <span data-en="AI Agents & Workflows Development" data-ar="إنشاء وتطوير وكلاء الذكاء الاصطناعي">AI Agents & Workflows Development</span>
                 </li>
                 <li>
@@ -297,7 +357,7 @@
         <div class="section-top" data-reveal>
           <div class="eyebrow" data-en="Portfolio" data-ar="الأعمال">Portfolio</div>
           <h2 class="section-title" data-en="Recent work" data-ar="أعمال حديثة">Recent work</h2>
-          <p class="section-sub" data-en="A mix of dashboards, corporate sites, and small utilities — five projects, five different shapes of problem." data-ar="مزيج من لوحات التحكم ومواقع الشركات والأدوات الصغيرة — خمسة مشاريع، وخمسة أنواع مختلفة من المشكلات.">A mix of dashboards, corporate sites, and small utilities — five projects, five different shapes of problem.</p>
+          <p class="section-sub" data-en="A mix of dashboards, corporate sites, and small utilities — four projects, four different shapes of problem." data-ar="مزيج من لوحات التحكم ومواقع الشركات والأدوات الصغيرة — أربعة مشاريع، وأربعة أنواع مختلفة من المشكلات.">A mix of dashboards, corporate sites, and small utilities — five projects, five different shapes of problem.</p>
         </div>
 
         <div class="filter-row">
@@ -316,11 +376,7 @@
             </div>
             <div class="proj-body">
               <h3>REC company</h3>
-              <p data-en="REC Company Management System is a centralized platform designed to help real estate and contracting companies manage operational, financial, and supplier-related activities through a unified digital environment. The system combines a modern web dashboard with a secure backend, PostgreSQL database, and an AI assistant capable of understanding text and Arabic voice commands and executing application operations through a collection of dedicated tools." data-ar="لوحة تحكم لإدارة العقارات والمستأجرين وعقود الإيجار، مع سلامة بيانات مدعومة بمعاملات SQL وتنبيهات لانتهاء العقود.">
-                REC Company Management System is a centralized platform designed to help real estate and contracting companies manage operational, financial, and supplier-related activities through a unified digital environment.
-                <br/>
-                The system combines a modern web dashboard with a secure backend, PostgreSQL database, and an AI assistant capable of understanding text and Arabic voice commands and executing application operations through a collection of dedicated tools.
-              </p>
+              <p data-en="REC Company Management System is a centralized platform designed to help real estate and contracting companies manage operational, financial, and supplier-related activities through a unified digital environment. The system combines a modern web dashboard with a secure backend, PostgreSQL database, and an AI assistant capable of understanding text and Arabic voice commands and executing application operations through a collection of dedicated tools." data-ar="نظام REC لإدارة الشركات هو منصة مركزية مصممة لمساعدة شركات العقارات والمقاولات على إدارة الأنشطة التشغيلية والمالية والمتعلقة بالموردين في بيئة رقمية موحّدة. يجمع النظام بين لوحة تحكم ويب حديثة وخلفية آمنة وقاعدة بيانات PostgreSQL ومساعد ذكاء اصطناعي قادر على فهم النصوص والأوامر الصوتية العربية وتنفيذ عمليات التطبيق عبر مجموعة من الأدوات المخصصة.">REC Company Management System is a centralized platform designed to help real estate and contracting companies manage operational, financial, and supplier-related activities through a unified digital environment. The system combines a modern web dashboard with a secure backend, PostgreSQL database, and an AI assistant capable of understanding text and Arabic voice commands and executing application operations through a collection of dedicated tools.</p>
               <div class="proj-tags">
                 <span><i class="devicon-nextjs-plain colored"></i> Next.js</span>
                 <span><i class="devicon-tailwindcss-plain colored"></i> Tailwind</span>

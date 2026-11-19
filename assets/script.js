@@ -16,33 +16,66 @@ lightboxImg.src = '';
 }
 
 document.querySelectorAll('.proj-thumb img').forEach(img => {
+img.setAttribute('tabindex', '0');
+img.setAttribute('role', 'button');
 img.addEventListener('click', () => openLightbox(img));
+img.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openLightbox(img); } });
 });
 lightboxClose.addEventListener('click', closeLightbox);
 lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
 document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
 
 // language toggle & alt-text sync
-const toggle = document.getElementById('langToggle');
+const langToggles = document.querySelectorAll('.lang-toggle'); // استهداف كل أزرار اللغة
 let isAr = false;
-function applyLang(){
-document.documentElement.setAttribute('dir', isAr ? 'rtl' : 'ltr');
-document.documentElement.setAttribute('lang', isAr ? 'ar' : 'en');
-toggle.textContent = isAr ? 'عربي / EN' : 'EN / عربي';
-
-// Update Text Content
-document.querySelectorAll('[data-en]').forEach(el => {
-    const val = isAr ? el.getAttribute('data-ar') : el.getAttribute('data-en');
-    if (val !== null) el.textContent = val;
-});
-
-// Fix: Dynamic Alt text update for images
-document.querySelectorAll('img[data-alt-en]').forEach(img => {
-    const altVal = isAr ? img.getAttribute('data-alt-ar') : img.getAttribute('data-alt-en');
-    if (altVal) img.setAttribute('alt', altVal);
-});
+try { isAr = localStorage.getItem('lang') === 'ar'; } catch (_) {}
+let currentNoteState = 'idle';   // حالة رسالة الفورم (تُحفظ عند تغيير اللغة)
+const pageTitles = { en: 'Adel Al-Boshy — Full-Stack Developer', ar: 'عادل البوشي — مطوّر Full-Stack' };
+const menuLabels = {
+    en: { open: 'Open menu', close: 'Close menu' },
+    ar: { open: 'فتح القائمة', close: 'إغلاق القائمة' }
+};
+function syncMenuLabel(){
+    const t = document.getElementById('menuToggle');
+    if (!t) return;
+    const l = menuLabels[isAr ? 'ar' : 'en'];
+    t.setAttribute('aria-label', t.classList.contains('is-open') ? l.close : l.open);
 }
-toggle.addEventListener('click', () => { isAr = !isAr; applyLang(); });
+
+function applyLang(){
+    document.documentElement.setAttribute('dir', isAr ? 'rtl' : 'ltr');
+    document.documentElement.setAttribute('lang', isAr ? 'ar' : 'en');
+    
+    // تحديث نص جميع أزرار اللغة
+    langToggles.forEach(btn => {
+        btn.textContent = isAr ? 'عربي / EN' : 'EN / عربي';
+    });
+
+    // Update Text Content
+    document.querySelectorAll('[data-en]').forEach(el => {
+        const val = isAr ? el.getAttribute('data-ar') : el.getAttribute('data-en');
+        if (val !== null) el.textContent = val;
+    });
+
+    // Fix: Dynamic Alt text update for images
+    document.querySelectorAll('img[data-alt-en]').forEach(img => {
+        const altVal = isAr ? img.getAttribute('data-alt-ar') : img.getAttribute('data-alt-en');
+        if (altVal) img.setAttribute('alt', altVal);
+    });
+
+    document.title = isAr ? pageTitles.ar : pageTitles.en;
+    syncMenuLabel();
+    if (typeof setNote === 'function' && formNote) setNote(currentNoteState);
+}
+
+// ربط الحدث بكل أزرار اللغة الموجودة في الصفحة
+langToggles.forEach(btn => {
+    btn.addEventListener('click', () => { 
+        isAr = !isAr; 
+        try { localStorage.setItem('lang', isAr ? 'ar' : 'en'); } catch (_) {}
+        applyLang(); 
+    });
+});
 
 // About tools: infer each tool's name, then give it a matching glow on hover/focus.
 const toolThemes = {
@@ -71,13 +104,9 @@ function setToolGlow(chip, isActive) {
 document.querySelectorAll('.about .skill-chip').forEach((chip) => {
     const toolName = chip.textContent.trim();
     chip.style.setProperty('--tool-glow', getToolTheme(toolName));
-    chip.setAttribute('tabindex', '0');
-    chip.setAttribute('aria-label', `${toolName} tool`);
 
     chip.addEventListener('mouseenter', () => setToolGlow(chip, true));
     chip.addEventListener('mouseleave', () => setToolGlow(chip, false));
-    chip.addEventListener('focus', () => setToolGlow(chip, true));
-    chip.addEventListener('blur', () => setToolGlow(chip, false));
 });
 
 // portfolio filter
@@ -105,7 +134,8 @@ success: { en: "Sent! Thanks — I'll reply within a day.", ar: "تم الإرس
 error: { en: "Something went wrong — please email me directly instead.", ar: "حصل خطأ — من فضلك راسلني مباشرة على البريد بدلاً من ذلك." }
 };
 function setNote(state){
-const lang = document.documentElement.getAttribute('dir') === 'rtl' ? 'ar' : 'en';
+currentNoteState = state;
+const lang = isAr ? 'ar' : 'en';
 formNote.textContent = noteMsgs[state][lang];
 }
 if (contactForm) {
@@ -161,3 +191,49 @@ revealEls.forEach(el => io.observe(el));
 } else {
 revealEls.forEach(el => el.classList.add('is-visible'));
 }
+
+(function(){
+  const menu   = document.getElementById('mobileMenu');
+  const toggle = document.getElementById('menuToggle');
+  const body   = document.body;
+
+  function openMenu(){
+    menu.classList.add('is-open');
+    toggle.classList.add('is-open');
+    toggle.setAttribute('aria-expanded', 'true');
+    menu.setAttribute('aria-hidden', 'false');
+    body.classList.add('no-scroll');
+    syncMenuLabel();
+    const closeBtn = menu.querySelector('.menu-close');
+    if (closeBtn) closeBtn.focus();
+  }
+
+  function closeMenu(){
+    menu.classList.remove('is-open');
+    toggle.classList.remove('is-open');
+    toggle.setAttribute('aria-expanded', 'false');
+    menu.setAttribute('aria-hidden', 'true');
+    body.classList.remove('no-scroll');
+    syncMenuLabel();
+  }
+
+  toggle.addEventListener('click', () => {
+    menu.classList.contains('is-open') ? closeMenu() : openMenu();
+  });
+
+  menu.querySelectorAll('[data-close-menu], a').forEach(el => {
+    el.addEventListener('click', closeMenu);
+  });
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && menu.classList.contains('is-open')) closeMenu();
+  });
+
+  // أغلق القائمة تلقائيًا لو اتحولت الشاشة لحجم ديسكتوب (تدوير/تكبير)
+  window.matchMedia('(min-width: 1025px)').addEventListener('change', e => {
+    if (e.matches && menu.classList.contains('is-open')) closeMenu();
+  });
+})();
+
+// طبّق اللغة المحفوظة عند التحميل (في آخر الملف عشان كل العناصر تكون معرّفة)
+if (isAr) applyLang();
